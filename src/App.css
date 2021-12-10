@@ -1,0 +1,238 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ .main{
+  background-image: url('https://cutewallpaper.org/21/website-background-patterns/The-Pattern-Library.gif');
+  background-repeat: repeat;
+  position:fixed;
+  width: 100%;
+
+  z-index: -1;
+  height: 100vh;
+  scroll-behavior: auto;
+  overflow-x: hidden;
+ }
+ .header{
+   display: flex;
+   width: 100vw;
+   height: 50px;
+   background-color: rgb(14, 14, 14);
+   text-align: center;
+   align-items:center;
+   justify-content:center;
+   opacity: 70%;
+ }
+ .weath{
+   font-size: 12px;
+   color:honeydew;
+   text-align: right;
+   width: 300px;
+   color: chocolate;
+ }
+.links{
+  color:beige;
+  font-size: 18px;
+  display: inline-block;
+  padding-left: 50px;
+  padding-right: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+.links:hover{
+  color: chocolate;
+}
+.output{
+  
+  flex-direction: column;
+  justify-content: center;
+}
+.cl{
+  display: inline-block;
+}
+.ParentMovieFrames{
+  display: inline-flex;
+  margin-left: 70px;
+  position: relative;
+}
+.MovieFrames{
+  position: relative;
+  width: 350px;
+  height: 250px;
+  margin: 20px;
+  margin-top: 10px;
+}
+.MovieFrames:hover{
+ background-color: black;
+ cursor: pointer;
+
+}
+.cover{
+  
+  width: 350px;
+  height: 190px;
+}
+.title{
+  width: 350px;
+  height: 60px;
+  text-align: center;
+  color:tan;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 15px;
+  background-color: rgb(0, 0, 0);
+  opacity: 50%;
+  text-decoration: none;
+}
+.title a{
+  text-decoration: none;
+}
+
+.createTrailer{
+  position: absolute;
+  top : 15%;
+  left: 10%;
+  align-items: center;
+  width: 80%;
+  height: 600px;
+  background-color: black;
+  border: 1px white solid;
+  z-index: +10;
+}
+.MainError{
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+.error{
+  margin-top: 300px;
+  top : 200px;
+  left : 600px;
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+}
+
+/* about PAGE style */
+.mainTxt{
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+.TXT{
+  width: 850px;
+}
+.TxtTitle{
+  padding-top: 20px;
+  font-size: 18px;
+  color: antiquewhite;
+  font-weight: 500;
+}
+.TxtPlot{
+  text-align: justify;
+  padding-top: 20px;
+  color: antiquewhite;
+}
+.TxtImg{
+  padding-top: 20px;
+}
+
+/* Search PAGE style */
+
+.MainSearch{
+  width: 100%;
+  height: auto;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+.search{
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  width: 700px;
+  height: 50px;
+  background-color: black;
+  border-radius: 8px;
+}
+.search input{
+  width: 600px;
+  height: 36px;
+  background-color: black;
+  border: none;
+  color: antiquewhite;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.search input:focus{
+  border: none;
+  outline: none;
+}
+
+i{
+  color: aliceblue;
+  size: 9px;
+  width: 80px;
+  cursor: pointer;
+}
+i:hover{
+  transform: scale(1.12);
+  width: 80px;
+  color:coral;
+}
+
+/* Movie Search Results */
+
+.MainFrameResult{
+  width: 100%;
+  height: auto;
+  align-items: center;
+  text-align: center;
+}
+.ParentResult{
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  width: 700px;
+  height: 100px;
+  color: white;
+  background-color: rgb(56, 56, 56);
+  border-bottom: 1px solid rgb(138, 138, 138);
+  
+}
+.ParentResult:hover{
+  cursor: pointer;
+  background-color: rgb(19, 19, 19);
+ 
+}
+.Result{
+  display: flex;
+}
+.poster{
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  background-size: contain;
+}
+.origin_name{
+  display: table-column;
+  width: 100px;
+  margin-right: 25px;
+}
+.name{
+  display: table-column;
+  width: 100px;
+  margin-right: 25px;
+}
+
+
+
+

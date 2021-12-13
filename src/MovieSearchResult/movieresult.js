@@ -1,6 +1,7 @@
 import React from 'react'
 
 function MovieResult(props) {
+   
     return (
         <div className="MainFrameResult"> 
            <div className="ParentResult">
@@ -9,6 +10,8 @@ function MovieResult(props) {
                 
                 <div className="origin_name">{props.x.original_title}</div>
                 <div className="name">{props.x.name}</div>
+
+                {/* <h1>HELLO WORLD</h1> */}
               </div>
            </div>
         </div>

@@ -14,23 +14,16 @@ function Search() {
          
     }
     useEffect(  ()=>{
-      SearchMovie();
-      async function SearchMovie(){
+      searchFun();
+      async function searchFun(){
        if (name.length >= 2){
         const response = await axios.get(`https://movie.ge/Api/WebService/search/${name}`,{
             params : {
                value : name,
             },      
         })
-        if(!response.data.pagination.data===""){
-          return (
-                    setSearchMovie(response.data.pagination.data),
-                    setVisible('visible')
-                  )
-
-        }
-        // console.log(response.data.pagination)
-        // return setSearchMovie(response.data.pagination.data)
+        setSearchMovie(response.data.pagination.data)
+        setVisible('visible')
       }
       if(name.length===0){
         return (
@@ -41,7 +34,6 @@ function Search() {
     }
     }, [name])
 
-  
 
     return (
         <div className="window">
@@ -49,9 +41,9 @@ function Search() {
                 <div className="search">
                    <input placeholder="Movie name" onChange={(e)=> setName(e.target.value)}></input>
                    <i class="fal fa-times fa-2x" style={{visibility : visible}} onClick={remove}></i>
-                  
+                   
                 </div>    
-                {searchMovie.map(x => <MovieResult x={x}/>)}
+                {searchMovie.map( x => <MovieResult x={x}/>)}
             </div>
         </div>
     )

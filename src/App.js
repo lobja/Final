@@ -15,7 +15,6 @@ function App() {
 
    useEffect ( ()=> {
       Weather();
-
       async function Weather(){
        const response = await axios.get('http://api.weatherapi.com/v1/current.json',{
           params : {
@@ -26,7 +25,7 @@ function App() {
              "accept" : "current.json"
           }
        })
-
+ 
        weather({
            type: "weather",
            cel : response.data.current.temp_c,
@@ -44,7 +43,12 @@ function App() {
             <Link to="/"><div className='ln1, links'>Homepage</div></Link>
             <Link to="/about"><div className='ln2, links'>About</div></Link>
             <Link to="/search"><div className='ln3, links'>Search</div></Link>
-            <div className="weath">{counter}</div>
+            <div className="weath">
+                <div>
+                  <div>Temp in Tbilisi {counter.cel}</div>
+                  <div>Humidity {counter.hum}</div>
+                </div>
+            </div>
          </div>
 
          
